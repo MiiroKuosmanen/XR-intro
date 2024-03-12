@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1f664f9a675c7ff4689df5ab3302c58a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - buttonClickedSfx: {fileID: 8300000, guid: 89d62380470be9e47ba7cf3f97105142, type: 3}
+  - accessDeniedSfx: {instanceID: 0}
+  - accessGrantedSfx: {instanceID: 0}
+  - panelMesh: {instanceID: 0}
+  - keypadDisplayText: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

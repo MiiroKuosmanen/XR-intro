@@ -8,7 +8,9 @@ public class BreakOut : MonoBehaviour
     // Start is called before the first frame update
     public Vector3 start = new Vector3(0, 0, -6);
     public Vector3 second = new Vector3(0, 0, -40);
-    void Start()
+void Start()
+{
+    if (action != null)
     {
         action.action.Enable();
         action.action.performed += (ctx) =>
@@ -20,6 +22,11 @@ public class BreakOut : MonoBehaviour
             }
         };
     }
+    else
+    {
+        Debug.LogError("Action is not set.");
+    }
+}
 
     // Update is called once per frame
     void Update()
