@@ -13,6 +13,10 @@ namespace NavKeypad
         [SerializeField] private float buttonPressedTime = 0.1f;
         [Header("Component References")]
         [SerializeField] private Keypad keypad;
+        [Header("Audio")]
+        [SerializeField] private AudioSource audioSource; // Assign this in the inspector
+        [SerializeField] private AudioClip clickSound; // Assign this in the inspector
+
 
 
         public void PressButton()
@@ -22,6 +26,11 @@ namespace NavKeypad
                 keypad.AddInput(value);
                 StartCoroutine(MoveSmooth());
             }
+        }
+        public void OnButtonPressed()
+        {
+            audioSource.PlayOneShot(clickSound);
+            // Add other code for when the button is pressed
         }
         private bool moving;
 
